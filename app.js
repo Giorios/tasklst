@@ -9,13 +9,6 @@ li.parentNode.removeChild(li)
 });
 });
 
-const link = document.querySelector('#page-banner a');
-
-    link.addEventListener('click', function(e){
-        e.preventDefault();
-        console.log('navigation to ', e.target.textContent, ' was prevented');
-    });
-
     const list = document.querySelector('#book-list ul');
 //delete books
 list.addEventListener('click', function(e){
@@ -35,6 +28,7 @@ addForm.addEventListener('submit', function(e){
   const li = document.createElement('li');
   const bookName = document.createElement('span');
   const deleteBtn = document.createElement('span');
+  
 
     deleteBtn.textContent = 'delete';
     bookName.textContent = value;
@@ -71,4 +65,3 @@ searchBar.addEventListener('keyup', function(e){
     }
   })
 })
-
