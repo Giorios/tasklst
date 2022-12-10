@@ -1,7 +1,8 @@
 body{
-    font-family: Tahoma;
+    font-family: 'Raleway', sans-serif;
     color: #444;
     letter-spacing: 1px;
+    
 }
 
 h1, h2{
@@ -17,11 +18,12 @@ h1, h2{
     box-sizing: border-box;
     padding: 0 0 20px;
     overflow: hidden;
-    border: 1px solid lightgray;
+    border: 1px solid #ADBAEB;
+    background-color: #F4F6FD;
 }
 
 #page-banner{
-    background: #eee ;
+    background: #ADBAEB ;
     padding: 10px 0;
 
 }
@@ -38,10 +40,10 @@ h1, h2{
     margin: 20px auto;
     display: block;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #0A155A;
     border-radius: 4px;
     font-size: 16px;
-    color: #444;
+    color: black;
 }
 
 #book-list, #add-book, #tabbed-content{
@@ -55,17 +57,17 @@ h1, h2{
 
 #book-list li{
     padding: 20px;
-    border-left: 5px solid #ddd;
+    border-left: 5px solid #48464B;
     margin: 20px 10px;
 }
 
 #book-list li:hover{
-    border-color: #9361bf;
+    border-color: #3D47AF;
 }
 
 .delete{
     float: right;
-    background: #9361bf;
+    background: #2643C4;
     padding: 6px;
     border-radius: 4px;
     cursor: pointer;
@@ -94,8 +96,8 @@ h1, h2{
 }
 
 #add-book button{
-    border: 1px solid #9361bf;
-    background: #9361bf;
+    border: 1px solid #2643C4;
+    background: #2643C4;
     padding: 10px 20px;
     font-size: 16px;
     display: inline-block;
@@ -107,7 +109,12 @@ h1, h2{
     margin: 20px 0;
     border-left: 0;
     color: white;
+
+    opacity: 0.6;
+    transition: 0.3s;
 }
+
+#add-book button:hover {opacity: 1}
 
 #add-book:after{
     content: '';
@@ -126,3 +133,4 @@ h1, h2{
 input[type=checkbox]:checked + label.strikethrough{
   text-decoration: line-through;
 }
+
